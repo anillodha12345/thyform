@@ -1,0 +1,247 @@
+.StatusSummary{
+    height:150px;
+    background-color: blue;
+    color: white;
+    border-radius:10px;
+    width: 100%;
+}
+.barchart1{
+    background-color: gray;
+}
+/* .barchart2{
+    background-color: green;
+} */
+.barchart-heading{
+    justify-content: space-between;
+}
+.status-heading{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    margin : 10px 0px 0px 10px 
+}
+.number-value{
+    font-size: 1.625rem;
+    color: #0dcaf0;
+}
+.campaign-card{
+    background: #1E283D url(../../assets/images/darkBG.png) repeat-y right top;
+    height: 180px;
+    border-radius: 15px;
+}
+.recharts-text > tspan {
+    font-size: 12px !important;
+}
+.card-data{  
+    border-radius: 14px;
+}
+.chart-heading{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.bar-chart-heading{
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.chart-para{
+    margin-left: 20px;
+    color: #8c8c8c;
+}
+.bar-chart-para{
+    margin-left: 20px;
+    color: #8c8c8c;
+    font-size: 14px;
+}
+.bar-doller{
+    margin-left: 20px;
+}
+.chart-para > p{
+    font-size: 13px;
+    color: #8c8c8c;
+}
+.bar-chart-para > p {
+    font-size: 12.992px;
+    color: #8c8c8c;
+}
+.dropdown{
+    margin: 0px 20px 0px 0px;
+}
+.istatus-div{
+    color: rgba(255, 255, 255, 0.6);
+}
+.recharts-legend-wrapper{
+    top: -287px !important;
+    left: 250px !important;
+}
+.usd-data{
+     font-family: "Manrope", sans-serif;
+     font-weight: 600;
+     padding-left: 4px;
+}
+/* .recharts-legend-item{
+    margin-top: -50px!important;
+} */
+.campaign-card .card-content{
+    color: white;
+    margin-right: 40%;
+}
+.campaign-card .card-content span {
+    font-weight: bold;   
+}
+.upgrade-btn{
+    background-color: #51B1E1;
+    color: white;
+    height: 50px;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.upgrade-btn:hover, .upgrade-btn:focus {
+    background: #269eda;
+    color: #ffffff;
+}
+.Todocard-body{
+    height:330px;
+}
+.Newmemberbtn{
+    padding-left:170px;
+   
+}
+.status-div{
+    display: flex;
+}
+.istatus-div{
+    width : 25%;
+    /* background-color: gray; */
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.isecstatus-div{
+    margin-right: 40px;
+}
+.addbtn{
+    background: #1F3BB3;
+    font-size: 14px;
+    height:40px;
+    color: white;
+    border-radius:8px;
+    border:1px solid #1F3BB3;
+}
+.inprogess{
+    background: #fad480;
+    color: #805905;
+    border-radius:5px;
+    height:30px;
+    width:90px;
+    padding-top:8px;
+    padding-left:5px;
+
+}
+.inprogespending{
+    background: #fedfdd;
+    color: #de1708;
+    border-radius:5px;
+    height:30px;
+    width:90px;
+    padding-top:8px;
+    padding-left:9px;
+}
+.inprogescomplete{
+background: #94e0db;
+color: #1d625e;
+border-radius:5px;
+height:30px;
+width:90px;
+padding-top:8px;
+padding-left:9px;
+}
+.leavereportcard{
+    height:150px;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 50px;
+    height:50px;
+  
+  
+  }
+.p-fixed{
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* background-color: #F4F5F7; */
+    margin-top: 44px;
+}
+
+.card-body{
+    padding: 1.88rem 1rem !important;
+}
+
+.rate-head{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8D8D8D;
+    margin-bottom: 4px;
+
+}
+.recharts-legend-wrapper{
+    position: relative !important;
+    width: 450px !important;
+    /* height: auto; */
+    /* left: 20px; */
+    /* bottom: 5px; */
+    z-index: 800 !important;
+}
+.pie-chart{
+    height: 495px;
+    border-radius: 14px;
+}
+.bar-card{
+    border-radius: 14px;
+}
+.dot1 {
+    height: 10px;
+    width: 10px;
+    background-color: #1f3bb3;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot2 {
+    height: 10px;
+    width: 10px;
+    background-color: #81dada;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot3 {
+    height: 10px;
+    width: 10px;
+    background-color: #52cdff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot4 {
+    height: 10px;
+    width: 10px;
+    background-color: #FDD0C7;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .line-data{
+      border-radius: 14px;
+  }
+.recharts-default-legend{
+    text-align: right !important;
+    /* float: revert; */
+    padding-right: 50px !important;
+}
+.recharts-wrapper{
+    width: 312px !important;
+}

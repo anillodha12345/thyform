@@ -1,0 +1,166 @@
+
+  // @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');  
+  // ul,
+  // li {
+  //   list-style: none;
+  // }
+  
+  // a {
+  //   text-decoration: none;
+  // }
+  
+  // #navbarform a {
+  //   display: flex;
+  // }
+  // aside {
+  //   font-size: 1.5rem;
+  //   // transition: all 300ms ease-in-out;
+  // } 
+  // .thyform-container{
+  //   padding: 0px !important;
+  // }
+  // .react-form-builder{
+  //   margin-left: -27px !important;
+  //   width: 100vw;
+  // }
+  // .react-form-builder-preview::before{
+  //   display: flex !important;
+  //   flex-direction: row-reverse !important;
+  // }
+  // .react-form-builder-toolbar {
+  //   margin : 0px 0px 0px 0px !important;
+  //   float: left !important; 
+  // }  
+  // .react-form-builder .react-form-builder-preview {
+  //   float : right !important;
+  // }
+ 
+
+  @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+  
+
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #navbarform a {
+    display: flex;
+  }
+  aside {
+    font-size: 1.5rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #navbarform {
+    // background: red;
+    // color:black;
+    // height: 100%;
+    // width: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // opacity: 0.9;
+    // overflow-x: hidden;
+    // padding-top: 60px;
+    // / / transition: 0.7s all ease-in-out; / /
+    background: #f3ffef;
+    color: black;
+    height: auto;
+    width: 102%;
+    position: relative;
+    top: -255px;
+    left: -27px;
+    // / opacity: 0.9; /
+    overflow-x: hidden;
+    padding-top: 60px;
+    z-index: 100;
+    transition: all 300ms ease-in;
+    margin-top: 255px;
+    margin-bottom: 20px !important;
+  }
+  
+  .opneSidebar {
+    transition: 0.7s;
+    width: 230px;    
+  }
+  
+  #close {
+    font-size: 4.3rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+  }
+  
+  .to-right {
+    margin-left: 250px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .navlistform {
+    padding: 1rem 3rem;
+  }
+  .navlistform li {
+    margin: 1rem 0;
+    transition: all 300ms ease-in-out;
+  }
+  .navlistform li a {
+    color: black;
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .navlistform li a:hover {
+    color: #2748b4;
+    padding: 0.3rem 0.2rem;
+    border-bottom: #2748b4 2px solid;
+    width: 50%;
+  }
+  .form-wrap.form-builder .pull-left {
+    float: right !important;
+  }
+  #fb-editor{
+    margin-top: -59px;
+    // display: none;
+  }
+  .form-builder-overlay{
+    width: 0px !important;
+  }
+  .form-wrap.form-builder .cb-wrap {
+    width: 19% !important;
+    float: left !important;
+    margin-left: 20px !important;
+  }
+  .frmb-control li {
+    font-size: 18px !important;
+    background: #545f6f !important;
+    color: #fff !important;
+    padding: 10px !important;
+  }
+  // frmb-control ui-sortable
+  // .frmb-control :hover hover .frmb-control li {
+  //   background: rgb(255, 97, 0) !important;
+  .frmb-control:hover {
+    background: rgb(255, 176, 59) !important;
+  }
+  .frmb-control li:hover {
+    background: #5E50F9 !important;
+  }
+  
+  .form-wrap.form-builder .stage-wrap {
+    width: 79% !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .form-builder-dialog{    
+    margin-left: 35rem !important;
+    margin-top: -15rem !important;
+    z-index: 999999 !important;
+    // opacity: 1;
+  }

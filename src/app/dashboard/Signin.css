@@ -1,0 +1,267 @@
+/* .signin-page.light-mode {
+  background-color: #fff !important;
+  color: #333;
+  transition: background-color 0.8s ease;
+}
+.signin-page.dark-mode {
+  background-color: #1a1919 !important;
+  color: white;
+  transition: background-color 0.8s ease !important;
+} */
+
+.coloradmins {
+  display: flex;
+  margin-right: 50px;
+  font-size: 28px;
+}
+.reserved {
+  display: flex;
+  justify-content: center;
+}
+.showlog {
+  margin-left:67%;
+  position: absolute;
+  padding-top: 6px;
+  
+}
+/* .signin-page{
+  background-color: #f3f3f3;
+  height: 657px;
+} */
+/* @media screen and (max-width: 375px) {
+  .showlog {
+    margin-left: 160px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .showlog {
+    margin-left: 80px !important;
+  }
+}*/
+/* @media screen and (max-width: 425px) {
+  .showlog {
+    margin-left:240px !important;
+  }
+} */
+ /* @media screen and (max-width:1024px) {
+  .showlog {
+    margin-left:300px !important;
+    padding-right:300px !important;
+  }
+} 
+
+ */
+ /* .signin-div{
+   height: 100vh !important;
+ } */
+ .sigin-container{
+   margin: auto;
+ }
+ 
+.darkmodes {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.darkicon {
+  text-align: right;
+}
+/* body {
+  background-color: white;
+  color: black;
+} */
+/* html,body, #root, #login {
+  height: 100%;
+  overflow: auto;
+} */
+.loginbutton {
+  background-color: #00acac;
+  color: white;
+  border-radius: 10px;
+}
+.loginbutton-btn {
+  background-color: #00acac;
+  color: white;
+  border-radius: 10px;
+  padding : 10px 3rem 10px 3rem !important;
+}
+.thyform-heading{
+  display: flex;
+  justify-content: space-between;
+}
+.linear {
+  /* background: linear-gradient(270deg, darkcyan 0%, darkcyan 100%);
+  border-radius: 10px;
+  height: 25px;
+  width: 25px; */
+  border: 14px solid transparent;
+  border-color: transparent rgba(0,0,0,.15) rgba(0,0,0,.3);
+  background-color: var(--app-theme);
+  background-color: #00acac;
+  width: 28px;
+  height: 28px;
+  font-size: 0;
+  border-radius: 6px;
+  margin: 7px 10px 0px 0px;
+  
+}
+.bold-letter {
+  font-weight: 700 !important;
+}
+.admin-letter {
+  font-weight: 300 ;
+}
+.icon{
+  margin: 0px 10px 0px 0px;
+  font-size: 28px;
+  color: #c7c8ca;
+}
+.signin-input{
+  height: 2.175rem !important;
+  padding: 0px 12px !important;
+  border-radius: 6px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.check-box-label{
+  margin-left: 1.75rem !important;
+}
+/* RESOPONSIVE CSS */
+/* @media only screen and (min-width: 1900px) {
+  .showlog{
+    margin-left:85% !important;
+   }
+} */
+/* @media only screen and (min-width: 1670px) {
+  .showlog{
+    margin-left:87% !important;
+   }
+} */
+/* @media only screen and (min-width: 1650px) {
+  .showlog{
+    margin-left:85% !important;
+   }
+} */
+@media only screen and (max-width: 2715px) {
+  .showlog{
+    margin-left:85% !important;
+   }
+}
+@media only screen and (max-width: 2456px) {
+  .showlog{
+    margin-left:83% !important;
+   }
+}
+@media only screen and (max-width: 2175px) {
+  .showlog{
+    margin-left:81% !important;
+   }
+}
+@media only screen and (max-width: 1900px) {
+  .showlog{
+    margin-left:79% !important;
+   }
+}
+@media only screen and (max-width: 1650px) {
+  .showlog{
+    margin-left:77% !important;
+   }
+}
+/* @media only screen and (min-width: 1501px){
+  .showlog{
+    margin-left:75% !important;
+   }
+} */
+@media only screen and (max-width: 1500px) {
+  .showlog{
+    margin-left:70% !important;
+   }
+}
+/* @media only screen and (min-width: 1250px) {
+  .showlog{
+    margin-left:70% !important;
+   }
+} */
+@media only screen and (max-width: 1110px) {
+  .showlog{
+   margin-left:63% !important;
+  }
+}
+@media only screen and (max-width: 1110px) {
+     .showlog{
+      margin-left:63% !important;
+     }
+}
+@media only screen and (max-width: 993px) {
+  .sigin-container {    
+    width: 80% !important;
+    /* flex: 0 0 100.666667%; */
+  }
+  .showlog{
+   margin-left:78% !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .showlog{
+    margin-left:74% !important;
+   }
+}
+@media only screen and (max-width: 800px) {
+  .showlog{
+    margin-left:70% !important;
+   }
+}
+@media only screen and (max-width: 740px) {
+  .showlog{
+    margin-left:65% !important;
+   }
+}
+@media only screen and (max-width: 665px) {
+  .sigin-container {    
+    width: 90% !important;
+  }
+  .showlog{
+    margin-left:65% !important;
+   }
+   .coloradmins{
+     margin-right: 0px !important;
+   }
+}
+@media only screen and (max-width: 576px) {
+  .showlog{
+    margin-left:73% !important;
+   }
+}
+@media only screen and (max-width: 576px) {
+  .coloradmins{
+    font-size: 20px !important;
+  }
+  .bold-letter{
+    margin-top: 5px;
+  }
+  .admin-letter{
+    margin-top: 5px;
+  }
+  .showlog{
+    margin-left:70%;
+   }
+}
+@media only screen and (max-width: 435px) {
+  .sigin-container {
+    
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .showlog{
+    margin-left:65% !important;
+   }
+   .sigin-container {
+    
+    width: 120%;
+  }
+}
+/* RESOPONSIVE CSS */

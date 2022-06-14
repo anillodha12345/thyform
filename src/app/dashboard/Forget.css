@@ -1,0 +1,33 @@
+
+.resend {
+  text-align: right;
+  
+}
+.forgetbutton {
+  background-color: darkcyan;
+  color: white;
+  height: 40px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.abcv{
+  height: 100%;
+}
+.data{
+ margin-top: 120px;
+ margin-bottom: 147px;
+}
+.reset-form-data{
+  margin-top: 80px;
+  margin-bottom: 140px;
+}
+.from-input-field{
+  height: 40px;
+  width: 90%;
+  margin: auto;
+}
+.label-heading{
+  width: 90%;
+  margin: auto;
+}

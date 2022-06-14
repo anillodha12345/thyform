@@ -1,0 +1,21 @@
+.sidebar_container{
+    position: fixed;
+    background: #f4f5f7;
+    width: 233px;
+}
+/* .nav{
+    margin-top: 95px;
+} */
+.heading{
+    margin-left: 18px;
+    font-size: 1.8rem;
+}
+.nav_icon{
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+.navbar-toggler{
+    padding: 0.25rem 2px !important;
+    font-size: 28px !important;
+}
