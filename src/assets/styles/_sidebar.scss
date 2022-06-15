@@ -15,6 +15,7 @@
   .menu-icon-btn{
     display: flex;
     padding: 12px;
+    padding-left: 19px;
   }
   .logo-thyform{
     padding: 12px;
@@ -49,7 +50,7 @@
         vertical-align: middle;
       }
     }
-
+     
     .brand-logo-mini {
       display: none;
       color: black;
@@ -214,17 +215,17 @@
           margin-left: auto;
         }
 
-        &:hover {
-          color: $sidebar-navlink-menu-item-hover-color;
+        // &:hover {
+        //   color: $sidebar-navlink-menu-item-hover-color;
           
           
-        }
+        // }
       }
 
       &.active {
         background-color: white !important;
         >.nav-link {
-          color: $sidebar-light-menu-active-color;
+          // color: $sidebar-light-menu-active-color;
           background-color: white;
           // .menu-title,
           // i {
@@ -375,5 +376,10 @@
     &.active {
       right: 0;
     }
+  }
+}
+@media screen and (max-width:600px){
+  .menu-icon-btn{
+    padding-left: 18px;
   }
 }

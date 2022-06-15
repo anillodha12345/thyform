@@ -930,7 +930,7 @@ export class Dashboard extends Component {
             <div className="page-header ">
               {/* <h4 className="page-title">Dashboard</h4> */}
               <div className="quick-link-wrapper w-100 d-md-flex flex-md-wrap ">
-                <ul className="quick-links" style={this.props.name}>
+                {/* <ul className="quick-links" style={this.props.name}>
                   <li>
                     
                       Build
@@ -946,8 +946,8 @@ export class Dashboard extends Component {
                       Publish
                 
                   </li>
-                  {/* <li><a href="!#" onClick={evt =>evt.preventDefault()}>More</a></li> */}
-                </ul>
+                 
+                </ul> */}
                 <ul className="quick-links ml-auto">
                   <li>
                
@@ -984,7 +984,7 @@ export class Dashboard extends Component {
               <div className="card-body">
                 <h2 className="chart-heading">Performance line chart</h2>
                 <div className="d-xl-flex flex-column flex-lg-row chart-para">
-                  <h5>Lorem ipsum is placeholder text commonly used</h5>
+                  {/* <h5>Lorem ipsum is placeholder text commonly used</h5> */}
                 </div>
                 <div>
                   <ResponsiveContainer width="100%" aspect={3}>
@@ -1115,7 +1115,7 @@ export class Dashboard extends Component {
                 <h4 className="mb-0 chart-heading">Market Overview</h4>
                 <div className="bar-chart-para d-flex align-items-center justify-content-between w-100">
                   <p className="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. */}
                   </p>
                   <div className="dropdown">
                     <Dropdown>
@@ -1153,7 +1153,7 @@ export class Dashboard extends Component {
                 </div>
                 <div>
                 <BarChart
-                  width={700}
+                  width={680}
                   height={300}
                   data={bar_data}
                   margin={{

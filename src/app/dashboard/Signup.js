@@ -546,7 +546,7 @@ const Signup = () => {
                 </div>
                 <br />
                 <div className="mb-5 next-btn-div">
-                  <Link to="Signin">
+                  <Link to="/signin">
                     {" "}
                     <button
                       // onClick={secondbtn}
@@ -678,7 +678,7 @@ const Signup = () => {
                   <div className="col-md-8 col-lg-9 col-xl-5">
                     <div className="form-group">
                       <input
-                        type="Number"
+                        type="text"
                         className="form-control form-control-lg emailsinput"
                         placeholder="Enter your building number or name"
                       />
@@ -706,7 +706,7 @@ const Signup = () => {
                   <div className="col-md-8 col-lg-9 col-xl-5">
                     <div className="form-group">
                       <input
-                        type="Number"
+                        type="text"
                         className="form-control form-control-lg emailsinput"
                         placeholder="Enter the first line of your address"
                       />
@@ -720,7 +720,7 @@ const Signup = () => {
                   <div className="col-md-8 col-lg-9 col-xl-5">
                     <div className="form-group">
                       <input
-                        type="Number"
+                        type="text"
                         className="form-control form-control-lg emailsinput"
                         placeholder="Enter your town or city"
                       />

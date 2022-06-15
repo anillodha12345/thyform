@@ -32,7 +32,7 @@ const Forget = () => {
                   placeholder="Email"
                 />
               </div>
-              <div className="resend">
+              <div className="resend pe-4">
                 {timerStart ? (
                   <OtpTimer
                     seconds={5}

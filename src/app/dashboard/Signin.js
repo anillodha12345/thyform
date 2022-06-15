@@ -11,6 +11,14 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import { TiArrowRightThick } from "react-icons/ti";
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import { Box, makeStyles, Paper, Typography } from "@material-ui/core";
+
+const useStyle = makeStyles({
+  image: {
+    borderRadius: 100
+  }
+});
 const Signin = () => {
   const [passwordShowns, setpasswordShown] = useState("false");
   const handle = () => {
@@ -33,7 +41,30 @@ const btntoggle = ()=>{
  
 
 
+const [image, setImage] = useState({ preview: "", raw: "" });
 
+const handleChange = e => {
+  if (e.target.files.length) {
+    setImage({
+      preview: URL.createObjectURL(e.target.files[0]),
+      raw: e.target.files[0]
+    });
+  }
+};
+
+const handleUpload = async e => {
+  e.preventDefault();
+  const formData = new FormData();
+  formData.append("image", image.raw);
+
+  await fetch("YOUR_URL", {
+    method: "POST",
+    headers: {
+      "Content-Type": "multipart/form-data"
+    },
+    body: formData
+  });
+};
 
 
   return (
@@ -47,16 +78,34 @@ const btntoggle = ()=>{
     <div className="d-flex align-items-center auth signin-div px-0">
       <div className="row w-100 mx-0">
         {/* <div className="col-lg-6 mx-auto"></div> */}
-        <div className="col-lg-5 sigin-container">
+        <div className="col-lg-5 sigin-container mt-5">
           <div className="auth-form-light text-left py-5 px-4 px-sm-5" style={darkmode}>
             <div className="thyform-heading">
               <div className="coloradmins">
-                <span className="linear"></span>
+              {image.preview ? (
+          <img src={image.preview} alt="dummy" className="upload-img" />
+        ) : (
+          <>
+            <span className="linear"></span>
                 <b className="bold-letter">ThyForm</b>{" "}
                 <span className="admin-letter">Admin</span>
+          </>
+        )}
+               
               </div>
-              <div className="icon">
-                <TiArrowRightThick />
+              <div className="icon change-logo-btn">
+              <label htmlFor="upload-button">
+              <TiArrowRightThick />
+      </label>
+      <input
+        type="file"
+        id="upload-button"
+        style={{ display: "none" }}
+        onChange={handleChange}
+      />
+      <br />
+      {/* <button onClick={handleUpload}>Upload</button> */}
+              
               </div>
             </div>
             {/* <h6 className="font-weight-light">Bootstrap 5 Responsive ThyForm templete</h6> */}
@@ -123,7 +172,7 @@ const btntoggle = ()=>{
               <hr />
               <div className="reserved">ThyForm All Right Reserved 2021</div>
             </form>
-            <SettingsIcon onClick={btntoggle} style={{float:'right'}}/>
+            <SettingsIcon onClick={btntoggle} style={{float:'right'}} className='change-logo-btn'/>
           </div>
       
         </div>

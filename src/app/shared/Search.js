@@ -5,7 +5,7 @@ import useOnclickOutside from "react-cool-onclickoutside"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 
-const Search = () => {
+const Search = (props) => {
   const [search, setSearch] = useState()
 
   const toggle = () => {
@@ -17,21 +17,22 @@ const Search = () => {
   const ref = useOnclickOutside(() => {
     closeSearch()
   })
-
+console.log(props.style.color,'props.styleprops.styleprops.style')
   return (
     <Nav className="my-auto" ref={ref}>
       <Form
         className={
           search === false
-            ? "searchbar fadeOutWidth"
+            ? "searchbar fadeOutWidth pt-2"
             : search === true
             ? "searchbar fadeInWidth"
-            : "searchbar"
+            : "searchbar  pt-2"
         }
       >
         {search === true && (
           <input
-            ref={ref}
+            ref={ref} 
+         
             className={
               search === true
                 ? "search-input fadeIn"
@@ -47,21 +48,23 @@ const Search = () => {
         <div
           className={
             search === true
-              ? "icon-bg fadeOut"
+              ? "fadeOut"
               : search === false
-              ? "icon-bg fadeIn"
-              : "icon-bg"
+              ? "fadeIn"
+              : ""
           }
+          style={{color:props.style.color}}
         >
           {search !== true && (
             <FontAwesomeIcon
+         
               onClick={toggle}
               className={
                 search === true
-                  ? "search-icon fadeOut"
+                  ? "fadeOut"
                   : search === false
-                  ? "search-icon fadeIn"
-                  : "search-icon"
+                  ? " fadeIn"
+                  : ''
               }
               icon={faSearch}
             />

@@ -17,6 +17,7 @@ class Sidebar extends Component {
 state={
   color:this.props.name.color,
   backgroundColor:this.props.name.backgroundColor
+  
 }
 handlecolor = ()=>{
   this.setState({
@@ -71,13 +72,18 @@ componentDidMount(){
     }));
  
   } 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.data !== this.state.data) {
+      this.setState({chartsMenuOpen:true})
+    }
+  }
   render () {
 
-    console.log(this.state.chartsMenuOpen,'this.state.chartsMenuOpen',this.props.name.backgroundColor,'this.props.darkmodethis.props.darkmodethis.props.darkmodethis.props.darkmode')
+    console.log(this.state.chartsMenuOpen,'fdsfsdf',this.props.name.backgroundColor,'this.props.darkmodethis.props.darkmodethis.props.darkmodethis.props.darkmode')
     return (
       
       <nav className="sidebar sidebar-offcanvas " id="sidebar" style={this.props.name}>
-         <div className='menu-icon-btn'>
+         <div className='menu-icon-btn '>
          <button className="navbar-toggler navbar-toggler align-self-center" type="button" onClick={ () => document.body.classList.toggle('sidebar-icon-only') }>
             <i className="mdi mdi-menu"></i>
           </button>  <div className="logo-thyform text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
@@ -258,7 +264,7 @@ componentDidMount(){
           </li> */}
           <li className={ this.isPathActive('/charts') ? 'nav-item active' : 'nav-item' }>
             <div className={ this.state.chartsMenuOpen ? 'nav-link menu-expanded' : 'nav-link' }
-             onClick={ () => this.toggleMenuState('chartsMenuOpen') }
+             onClick={ (e) =>{e.preventDefault(); this.toggleMenuState('chartsMenuOpen')} }
               data-toggle="collapse">
             <i className='nav_icon'><GiChart /></i>
               <span className="menu-title" style={{color:this.props.name.sidebarcolor}}><Trans>Charts</Trans></span>
@@ -267,7 +273,7 @@ componentDidMount(){
             </div>
             {/* <Collapse in={ this.state.chartsMenuOpen }> */}
             {/* <Collapse> */}
-            <Collapse in={ this.state.chartsMenuOpen }>
+            <Collapse in={this.state.chartsMenuOpen}>
             <ul className="nav flex-column sub-menu">
                 <li className="nav-item"> <Link className={ this.isPathActive('/chart') ? 'nav-link active' : 'nav-link' } to="/chart" style={{color:this.props.name.sidebarcolor}}><Trans>ChartJs</Trans></Link></li>
                 <li className="nav-item"> <Link className={ this.isPathActive('/morris') ? 'nav-link active' : 'nav-link' } to="/morris" style={{color:this.props.name.sidebarcolor}}><Trans>Morris</Trans></Link></li>

@@ -13,6 +13,13 @@
   display: flex;
   margin-right: 50px;
   font-size: 28px;
+  width: 250px;
+  height: auto;
+
+}
+.upload-img{
+  height: auto;
+  width: 100%;
 }
 .reserved {
   display: flex;
@@ -115,6 +122,9 @@
   margin: 0px 10px 0px 0px;
   font-size: 28px;
   color: #c7c8ca;
+}
+.change-logo-btn{
+  cursor: pointer;
 }
 .signin-input{
   height: 2.175rem !important;

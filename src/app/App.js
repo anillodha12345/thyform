@@ -19,7 +19,7 @@ state={
   linechart:'blue',
   arealine1:'#1f3bb3',
   arealine2:'#52cdff',
-  fill1:'#e1ecfc',
+  fill1:'#ecfc',
   fill2:'#ddf8fe',
   sidebarcolor:'black',
   sidebarcolor1:'black'
@@ -103,7 +103,7 @@ state={
             {/* {!token ? '': footerComponent } */}
           </div>
         </div>
-       <SettingsIcon onClick={this.btntoggle} style={{float:'right'}}/>
+       <div className='change-logo-btn pe-4 pb-5'><SettingsIcon onClick={this.btntoggle} style={{float:'right'}} className='change-logo-btn'/></div>
       </div>
     );
   }

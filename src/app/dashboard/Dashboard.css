@@ -177,7 +177,9 @@ padding-left:9px;
     /* background-color: #F4F5F7; */
     margin-top: 44px;
 }
-
+.quick-link-wrapper{
+    padding-right: 23px;
+}
 .card-body{
     padding: 1.88rem 1rem !important;
 }
@@ -200,7 +202,7 @@ padding-left:9px;
     z-index: 800 !important;
 }
 .pie-chart{
-    height: 495px;
+    height: 456px;
     border-radius: 14px;
 }
 .bar-card{
@@ -240,8 +242,10 @@ padding-left:9px;
 .recharts-default-legend{
     text-align: right !important;
     /* float: revert; */
+    padding-top: 40px !important;
     padding-right: 50px !important;
 }
+
 .recharts-wrapper{
     width: 312px !important;
 }

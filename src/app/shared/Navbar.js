@@ -82,6 +82,7 @@ class Topnavbar extends Component {
     else if (currentHour === 12) msg = "Good Afternoon,";
     else if (currentHour >= 12 && currentHour <= 17) msg = "Good Afternoon,";
     else if (currentHour >= 17 && currentHour <= 24) msg = "Good Evening,";
+    else if (currentHour >= 20 && currentHour <= 24) msg = "Good Night,";
     return (
       <div>
       <nav
@@ -185,15 +186,15 @@ class Topnavbar extends Component {
       
             
             </li>
-            <li className="nav-item  nav-profile border-0 pl-1">
+            <li className="nav-item  nav-profile border-0 pl-1" >
               <div>
-                <Search />
+                <Search style={this.props.name}/>
               </div>
             </li>
-            <li className="nav-item  nav-profile border-0 ">
+            <li className="nav-item  nav-profile border-0 " >
               <Dropdown>
                 <Dropdown.Toggle className="nav-link count-indicator p-0 toggle-arrow-hide bg-transparent">
-                  <i className="mdi mdi-bell-outline"></i>
+                  <i className="mdi mdi-bell-outline" style={{color:this.props.name.color}}></i>
                   <span className="count bg-success">4</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="navbar-dropdown preview-list">
@@ -272,7 +273,7 @@ class Topnavbar extends Component {
             <li className="nav-item  nav-profile border-0">
               <Dropdown>
                 <Dropdown.Toggle className="nav-link count-indicator p-0 toggle-arrow-hide bg-transparent">
-                  <i className="mdi mdi-email-outline"></i>
+                  <i className="mdi mdi-email-outline" style={{color:this.props.name.color}}></i>
                   <span className="count">7</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="navbar-dropdown preview-list">
